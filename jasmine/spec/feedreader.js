@@ -94,9 +94,10 @@ $(function() {
         });
 
         it('Content should change when a new feed is loaded',function(done){
-            var contentSecondFeed = $(".feed").children()[1].innerHTML
+            var contentSecondFeed = $(".feed").children()[0].innerHTML
 
             expect(contentFirstFeed).not.toBe(contentSecondFeed);
+            
 
             done();
 
